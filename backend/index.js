@@ -19,12 +19,12 @@ const db = mysql.createConnection({
 
 db.connect(err => {
   if (err) console.error('Error al conectar con la BD:', err);
-  else console.log('✅ Conectado a la base de datos');
+  else console.log('Conectado a la base de datos');
 });
 
 // Ruta de prueba
 app.get('/', (req, res) => {
-  res.send('API de Tasky funcionando 🚀');
+  res.send('API de Tasky funcionando');
 });
 
 const PORT = process.env.PORT || 3000;
