@@ -1,0 +1,16 @@
+{
+  "name": "Tasky Dev Environment",
+  "dockerFile": "Dockerfile",
+  "appPort": [8100, 3000],
+  "postCreateCommand": "npm install --prefix frontend && npm install --prefix backend",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "angular.ng-template",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
